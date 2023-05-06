@@ -106,8 +106,10 @@
                                                           <div class="col-xl-12 col-md-12 col-sm-7"  id="back" >
 
 					<!--start word-->
-					<div class="banner">
-					<div class='console-container rightanimation'>Hello<br/> My Name Is Priyanka <br/>I'm <span id='text'></span><div class='console-underscore' id='console'>&#95;</div></div></div>
+					<div class="banner" id="text2">
+					<div class='console-container rightanimation' >Hello<br/> My Name is priyanka <br/><span id='text'></span><div class='console-underscore' id='console'>&#95;</div></div></div>
+					
+					
 					
 					<!--start word-->
                  
@@ -115,10 +117,21 @@
 																          </div>
                                                                      </div>
                                                                      </div> 
-				
+	<script>
+var w = document.documentElement.clientWidth || window.innerWidth;
+if (w <= 800) {
+// Probably mobile
+document.getElementById("text2").style.textalign = "center";
+document.getElementById("text2").style.fontsize = "small";
+} else {
+// Probably desktop
+document.getElementById("text2").style.textalign = "right";
+document.getElementById("text2").style.textalign = "larger";
+}
+</script>			
 			
 <script src="js/main.js"></script>
-                                                                     
+                                                
                                                       <!--started about section-->
 					<div class="container">
 					<div class="row">
@@ -138,7 +151,7 @@
                                                                     <div class="col-xl-12" style="background-image: linear-gradient(180deg, #e0e5f3, #fff, #fff);">
                                                                         <p id="text1" class="mt-4"> ABOUT US </p>
                                                                          <p id="texthead">I am Priyanka and I'm a Web Designer</p>
-																<p>Hi, I am from Ajmer Rajesthan. i have completed my higher education in the year 2019. I am final year, pursuing BBA (BACHELOR OF BUSINESS ADMINISTRATION) from Gca college ajmer.
+																<p>Hi, I am from Ajmer Rajasthan. i have completed my higher education in the year 2019. I am final year, pursuing BBA (BACHELOR OF BUSINESS ADMINISTRATION) from Gca college ajmer.
 																In my leisure time , i like to spend time in learning web development and programing. In that time I pursuing ICST Cource and Learn new Programing Language as like C, Java , python etc. </p>
 																</div>
                                                                                 
@@ -157,7 +170,7 @@
                                                                            <p> <i class="bi bi-chevron-double-right"></i>Birthday : 18 september 2001</p>
                                                                              <p> <i class="bi bi-chevron-double-right"></i>Website : unknown</p>
                                                                               <p><i class="bi bi-chevron-double-right"></i>Age : 20</p>
-                                                                            <p><i class="bi bi-chevron-double-right"></i>City : Rajesthan, Ajmer</p>
+                                                                            <p><i class="bi bi-chevron-double-right"></i>City : Rajasthan, Ajmer</p>
                                                                              <p><i class="bi bi-chevron-double-right"></i>Degree : Fresher</p>
                                                                               <p><i class="bi bi-chevron-double-right"></i>Gmail : priyankaji856@mail.com</p>
                                                                                     <p><i class="bi bi-chevron-double-right"></i>Freelance : Available</p>
@@ -183,7 +196,7 @@
 						<div class="col-xl-12">
 						<div class="text7">
 						<p id="text1">SKILLS</p>
-						<p>This is Techonical Skill</p>
+						<p>This is Technoical Skill</p>
 						<P>It takes knowladge,smart work . I have been helping make great idea happen for past 3 years and am always ready for new challenges.
 							I have a stong background in UI design which allows me to think on my feet and act upon it.
 						</P>
@@ -352,13 +365,13 @@ $(document).ready(function() {
                                                                            
                               <!--end skill section-->
                                                                             
-            <div class="container-fluid reveal" style="background-image: linear-gradient(180deg, #e6eaf5,  #e0e5f3, #fff,#fff); text-align: center;" id="resume" >
-                <div class="row">
+            <div class="container-fluid " style="background-image: linear-gradient(180deg, #e6eaf5,  #e0e5f3, #fff,#fff); text-align: center;" id="resume" >
+                <div class="row reveal">
                     <div class="col-xl-12">
                         <p id="text1" class="mt-5" >HOBBIES</p>
                           <div id="myBtnContainer">
   <button class="btn active" id="all" onclick="filterSelection('all')"> Show all</button>
-  <button class="btn" id="travling" onclick="filterSelection('travl')"> Travling</button>
+  <button class="btn" id="travling" onclick="filterSelection('travl')"> Travelling</button>
   <button class="btn" id="writing" onclick="filterSelection('write')"> writing</button>
   <button class="btn" id="reading" onclick="filterSelection('read')"> Reading</button>
   <button class="btn" id="coding" onclick="filterSelection('coding')"> Coding</button>
@@ -494,8 +507,8 @@ going to be working with technology in some way.
 <!--end three card-->
 
 <!--start four card-->
-<div class="container reveal" >
-<div class="row" id="row2">
+<div class="container" >
+<div class="row reveal" id="row2">
 <div class="col-xl-4 reveal" id="reading2">
 <div class="card filterDiv read">
 <a href="#myModal3" role="button" data-bs-toggle="modal">
@@ -505,7 +518,7 @@ going to be working with technology in some way.
 </div>
 </a>
 <div class="card-body">
-Nothing is better than reading and gaining mor and more knowladge reading furnishes the mind only
+Nothing is better than reading and gaining more and more knowladge reading furnishes the mind only
 with materials of knowladge. it is thinking that makes what we read ours.
 </div>
 </div>
@@ -674,8 +687,8 @@ for (var i = 0; i < btns.length; i++) {
 
             </div>   
 
-			  <div class="container-fluid reveal" style="background-color: #fff; ">
-                <div class="row">
+			  <div class="container-fluid " style="background-color: #fff; ">
+                <div class="row reveal">
 					<h2 id="text1" class="mt-5 myBox" style="text-align:center;">RESUME</h2>
 					<h3 id="texthead" style="text-align:center;" >Profectional Information</h3>
 					<div class="col-xl-6 reveal">
@@ -685,7 +698,7 @@ for (var i = 0; i < btns.length; i++) {
 					<p>My abjective is to achieve personal growth by overcoming professional challenges and to contribute 
 					a contribute a considerable amount of effort in achive goals that  are assigned to me.</p>
 					<p>Bagichi ka bada nagra Ajmer</p>
-					<p>Ajmer, Rajesthan</p>
+					<p>Ajmer, Rajasthan</p>
 					<p>priyankaji856@gmail.com</p>
 					</div>
 					
@@ -719,7 +732,6 @@ for (var i = 0; i < btns.length; i++) {
 					<p>Mangment student</p>
 					<p id="texthead">Tecnical Knnowlage</p>
 					<p>Tally</p>
-					<p>Rs-city</p>
 					<p>Front-end Developer (HTML,CSS,BOOTSTRAP,JS)</p>
 					<p>JAVA , PHP</p>
 					<p id="texthead">Senior Secondary(12TH)</p>
@@ -742,8 +754,8 @@ for (var i = 0; i < btns.length; i++) {
 						</div>
 						
 						
-			  <div class="container-fluid  reveal" style="background-image: linear-gradient(180deg, #fff, #e0e5f3,#fff); text-align:center;" id="Services" >
-                <div class="row">
+			  <div class="container-fluid  " style="background-image: linear-gradient(180deg, #fff, #e0e5f3,#fff); text-align:center;" id="Services" >
+                <div class="row reveal">
 				  <div class="col-xl-12">
 					<h2 id="text1" class="mt-5" style="text-align:center;">MY SERVICES</h2>
 					<h3 id="texthead" style="text-align:center;">What I Provide</h3>
@@ -791,17 +803,17 @@ for (var i = 0; i < btns.length; i++) {
 			</div>	
 
 				
-				 <div class="container-fluid reveal" style="background-image: linear-gradient(180deg, #fff, #fff ,#c0cbe3,#00253d);" id="contect">
-                <div class="row">
+				 <div class="container-fluid" style="background-image: linear-gradient(180deg, #fff, #fff ,#c0cbe3,#00253d);" id="contect">
+                <div class="row reveal">
 				  <div class="col-xl-12">
 					<h2 id="text1" class="mt-5 " style="text-align:center;">CONTACT ME</h2>
 					<h3 id="texthead" style="text-align:center;" >get in touch</h3>
 					</div>
 					<div class="row " style="color:#00253d; letter-spacing:0.05em; font-weight:bold;">
 					<div class="col-sm-6 mt-5" style="padding-top:30px;">
-					<p >	<i class="bi-person" ></i>  Name : Priyanka</p>
-					<p> <i class="bi bi-pin-map-fill"></i>  Address : Ajmer, Rajesthan</p>
-					<p> <i class="bi bi-envelope-heart-fill"></i>  Email : priyankaji856@gmail.com</p>
+					<p style="padding-left:20px;" >	<i class="bi-person" ></i>  Name : Priyanka</p>
+					<p style="padding-left:20px;"> <i class="bi bi-pin-map-fill"></i>  Address : Ajmer, Rajasthan</p>
+					<p style="padding-left:20px;"> <i class="bi bi-envelope-heart-fill"></i>  Email : priyankaji856@gmail.com</p>
 					</div>	
 					
 					<div class="col-sm-6">
